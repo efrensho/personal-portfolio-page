@@ -5,25 +5,32 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav id="navbar">
         <ul>
-            <a href="#">About</a>
-            <a href="#">Work</a>
-            <a href="#">Contact me</a>
+            <a href="#welcome-section">About</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
         </ul>
     </nav>
 
     <section id="welcome-section">
-        <h1>Hi, I'm Efrén</h1>
-        <p>just another web developer</p>
+        <div>
+            <h1>Hi, I am Efrén</h1>
+            <p>just another web developer</p>
+        </div>
+        <figure id="main-ilustration">
+            <img src="/imgs/code.svg" alt="">
+        </figure>
+
     </section>
 
     <section id="projects">
-        <h3>Some projects of mine</h3>
+        <h3>Here are some of my projects</h3>
         <div class="project-tile">
             <div class="project">
                 <a href="#">My first project</a>
@@ -49,13 +56,23 @@
     </section>
 
 
-    <footer>
+    <section id="contact">
         <h3>Contact me</h3>
         <div id="social-media">
-            <a href="#">GitHub</a>
-            <a href="#">Twitter</a>
+            <span>
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/efrensho" target="_blank">GitHub</a>
+            </span>
+            <span>
+                <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com/efrenshou" target="_blank">Twitter</a>
+            </span>
+            <span>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:efrenziho@gmail.com">E-mail</a>
+            </span>
         </div>
-    </footer>
+    </section>
 </body>
 
 </html>

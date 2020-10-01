@@ -1,35 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;1,300&display=swap');    
+
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --secondary-color: #f25f4c;
+}
+
+html {
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 #navbar {
     position: fixed;
     width: 100%;
-    border: 1px solid purple;
     height: 10vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: var(--secondary-color);
 }
 
 #navbar ul {
     padding: 1em;
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+    font-size: 1.2em;
+    color: #fffffe;
 }
 
+
 #welcome-section {
-    border: 1px purple solid;
-    padding-top: 10vh;
+    background-color: #0f0e17;
+    color: #fffffe;
+    font-size: 2em;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding-top: 7vh;
+}
+
+#welcome-section p {
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+#main-ilustration {
+    max-width: 40%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 #projects {
     text-align: center;
-    border: 1px solid purple;
+    margin-top: 5em;
+}
+
+h3 {
+    margin-bottom: 2em;
 }
 
 .project-tile {
@@ -42,9 +79,12 @@
     min-width: 30%;
 }
 
-footer {
+#contact {
     text-align: center;
-    border: 1px solid purple;
+    padding: 2em;
+    background-color: #0f0e17;
+    color: #fffffe;
+
 }
 
 #social-media {
