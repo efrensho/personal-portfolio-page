@@ -14,6 +14,9 @@
 html {
   font-family: "Chakra Petch", sans-serif;
 }
+body {
+  min-width: 300px;
+}
 
 img {
   max-width: 100%;
@@ -31,12 +34,41 @@ img {
 }
 
 #navbar ul {
-  padding: 1em;
+  margin-right: 1em;
   display: flex;
-  width: 25vw;
-  justify-content: space-between;
+  width: 250px;
+  justify-content: space-around;
   font-size: 1.2em;
   color: #fffffe;
+}
+
+@media (max-width: 900px) {
+  #welcome-section {
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    text-align: center;
+  }
+
+  #main-ilustration {
+    max-width: 375px !important;
+    margin: 0 1em !important;
+  }
+
+  .name {
+    margin: 0 1em !important;
+  }
+}
+
+@media (max-width: 300px) {
+  #navbar ul {
+    flex-direction: column;
+    font-size: 1em;
+    align-items: flex-end;
+  }
+
+  #welcome-section {
+    font-size: 1.5em !important;
+  }
 }
 
 #welcome-section {
@@ -47,7 +79,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 7vh;
+  /*padding-top: 7vh;*/
 }
 
 #welcome-section p {
@@ -61,20 +93,24 @@ img {
 
 #projects {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 h3 {
   margin-bottom: 2em;
+  font-size: 1.5em;
+  font-weight: normal;
 }
 
-.project-tile {
+.projects-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.project {
-  width: 30%;
+.project-tile {
+  width: 300px;
+  min-width: 30%;
   margin-bottom: 3em;
 }
 
@@ -99,4 +135,5 @@ h3 {
 #social-media {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
