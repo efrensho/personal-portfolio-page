@@ -1,120 +1,96 @@
 <!DOCTYPE html>
 
-<html lang="es" dir="ltr">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="en" dir="ltr">
 
-  <body>
-    <nav id="navbar" style="background-color: aqua !important;">
-      <ul>
-        <a href="#welcome-section">About</a>
-        <a href="#projects">Work</a>
-        <a href="#contact">Contact</a>
-      </ul>
-    </nav>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Efrén Vázquez Portfolio</title>
+  <meta name="description" content="Efrén Vázquez's web portfolio made only using HTML, CSS and JavaScript." />
+</head>
 
-    <section id="welcome-section">
-      <div class="name">
-        <h1>Hi, I am Efrén</h1>
-        <p>just another web developer</p>
+<body>
+  <nav id="navbar">
+    <ul>
+      <a href="#welcome-section">About</a>
+      <a href="#projects">Work</a>
+      <a href="#contact">Contact</a>
+    </ul>
+  </nav>
+
+  <section id="welcome-section">
+    <div class="name">
+      <h1>Hi, I am Efrén</h1>
+      <p>just another web developer</p>
+    </div>
+    <figure id="main-ilustration">
+      <img src="/imgs/code.svg" alt="" />
+    </figure>
+  </section>
+
+  <section id="projects">
+    <h2>Here are some of my projects</h2>
+    <div class="projects-container">
+      <div class="project-tile">
+        <a href="https://codepen.io/efrensho/full/qBZgZWJ" rel="noopener noreferrer" target="_blank">
+          <p class="project-title">Technical Documentation Page</p>
+          <img class="project-image" src="imgs/technical-documentation.png" alt="" />
+        </a>
       </div>
-      <figure id="main-ilustration">
-        <img src="/imgs/code.svg" alt="" />
-      </figure>
-    </section>
-
-    <section id="projects">
-      <h3>Here are some of my projects</h3>
-      <div class="projects-container">
-        <div class="project-tile">
-          <a href="https://codepen.io/efrensho/full/qBZgZWJ" target="_blank">
-            <p class="project-title">Technical Documentation Page</p>
-            <img
-              class="project-image"
-              src="imgs/technical-documentation.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="project-tile">
-          <a href="https://codepen.io/efrensho/full/qBZMZON" target="_blank">
-            <p class="project-title">Product Landing Page</p>
-            <img
-              class="project-image"
-              src="imgs/product-landind-page.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="project-tile">
-          <a href="https://codepen.io/efrensho/full/abNwKov" target="_blank">
-            <p class="project-title">Survey Form</p>
-            <img
-              class="project-image"
-              src="imgs/survey-form.png"
-              alt=""
-            />
-          </a>
-        </div>
-
-        <div class="project-tile">
-          <a href="https://codepen.io/efrensho/full/OJNyVdY" target="_blank">
-            <p class="project-title">Tribute Page</p>
-            <img
-              class="project-image"
-              src="imgs/trubute-page.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="project-tile">
-          <a href="https://efrensho.github.io/boletines/" target="_blank">
-            <p class="project-title">Boletines</p>
-            <img
-              class="project-image"
-              src="imgs/boletines.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="project-tile">
-          <a href="https://efrensho.github.io/cv/" target="_blank">
-            <p class="project-title">Curriculum Vitae</p>
-            <img
-              class="project-image"
-              src="imgs/curriculum.png"
-              alt=""
-            />
-          </a>
-        </div>
+      <div class="project-tile">
+        <a href="https://codepen.io/efrensho/full/qBZMZON" rel="noopener noreferrer" target="_blank">
+          <p class="project-title">Product Landing Page</p>
+          <img class="project-image" src="imgs/product-landind-page.png" alt="" />
+        </a>
       </div>
-    </section>
-
-    <section id="contact">
-      <h3>Contact me</h3>
-      <div id="social-media">
-        <span>
-          <i class="fab fa-github"></i>
-          <a id="profile-link" href="https://github.com/efrensho" target="_blank">GitHub</a>
-        </span>
-        <span>
-          <i class="fab fa-twitter"></i>
-          <a href="https://twitter.com/efrenshou" target="_blank">Twitter</a>
-        </span>
-        <span>
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:efrenziho@gmail.com">E-mail</a>
-        </span>
+      <div class="project-tile">
+        <a href="https://codepen.io/efrensho/full/abNwKov" rel="noopener noreferrer" target="_blank">
+          <p class="project-title">Survey Form</p>
+          <img class="project-image" src="imgs/survey-form.png" alt="" />
+        </a>
       </div>
-    </section>
-  </body>
+
+      <div class="project-tile">
+        <a href="https://codepen.io/efrensho/full/OJNyVdY" rel="noopener noreferrer" target="_blank">
+          <p class="project-title">Tribute Page</p>
+          <img class="project-image" src="imgs/trubute-page.png" alt="" />
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="https://efrensho.github.io/boletines/" rel="noopener noreferrer" target="_blank">
+          <p class="project-title">Boletines</p>
+          <img class="project-image" src="imgs/boletines.png" alt="" />
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="https://efrensho.github.io/cv/" rel="noopener noreferrer" target="_blank">
+          <p class="project-title">Curriculum Vitae</p>
+          <img class="project-image" src="imgs/curriculum.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact me</h2>
+    <div id="social-media">
+      <span>
+        <i class="fab fa-github"></i>
+        <a id="profile-link" href="https://github.com/efrensho" rel="noopener noreferrer" target="_blank">GitHub</a>
+      </span>
+      <span>
+        <i class="fab fa-twitter"></i>
+        <a href="https://twitter.com/efrenshou" rel="noopener noreferrer" target="_blank">Twitter</a>
+      </span>
+      <span>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:efrenziho@gmail.com">E-mail</a>
+      </span>
+    </div>
+  </section>
+</body>
+
 </html>
